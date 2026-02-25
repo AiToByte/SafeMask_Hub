@@ -39,3 +39,38 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# --- Next.js / Node 标准忽略 ---
+node_modules/
+.next/
+out/
+build/
+.DS_Store
+*.pem
+npm-debug.log*
+
+# --- Rust / WASM 专用忽略 ---
+
+# 1. 忽略 Rust 编译缓存目录
+wasm-core/target/
+
+# 2. 忽略 wasm-pack 生成的默认包目录
+wasm-core/pkg/
+
+# 3. 忽略拷贝到前端的产物（根据你的路径设置）
+# 如果你希望通过命令自动生成这些文件，请取消下面的注释
+# src/lib/wasm/safemask_wasm*
+
+# --- 环境/敏感信息 ---
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# --- 编辑器缓存 ---
+.vscode/
+.idea/
+*.swp
+*.swo
