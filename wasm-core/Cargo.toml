@@ -5,7 +5,7 @@ edition = "2021"
 
 [lib]
 # 🚀 必须声明为 cdylib，否则无法生成 .wasm 文件
-crate_type = ["cdylib"]
+crate-type = ["cdylib"]
 
 [dependencies]
 # WASM 核心桥梁
