@@ -10,7 +10,7 @@ interface LiveSandboxProps {
 }
 
 export default function LiveSandbox({ initialPattern, initialMask }: LiveSandboxProps) {
-  const [input, setInput] = useState("测试数据：我的手机号是 13800138000，邮箱 xiaosheng@outlook.com");
+  const [input, setInput] = useState("测试数据：我的手机号是 13888888888，邮箱 xiaosheng@outlook.com");
   const [output, setOutput] = useState("");
   const { isReady, initEngine, maskText } = useWasmEngine();
 
@@ -18,8 +18,8 @@ export default function LiveSandbox({ initialPattern, initialMask }: LiveSandbox
   useEffect(() => {
     const rules = JSON.stringify([
       { name: "Preview", pattern: initialPattern, mask: initialMask, priority: 10, enabled: true },
-      // 预置几个默认规则让实验室看起来更真实
-      { name: "Email", pattern: "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}", mask: "<EMAIL>", priority: 5, enabled: true }
+      // 预置几个默认规则让实验室看起来更真实, 这里容易引起歧义, 先注释
+      // { name: "Email", pattern: "[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}", mask: "<EMAIL>", priority: 5, enabled: true }
     ]);
     
     initEngine(rules);
