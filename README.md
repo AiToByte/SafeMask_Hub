@@ -47,6 +47,9 @@ npm install
 # 进入 WASM 内核目录
 cd wasm-core
 
+# 安装必要打包工具
+cargo install -f wasm-bindgen-cli
+
 # 编译为 Web 目标产物
 wasm-pack build --target web
 
