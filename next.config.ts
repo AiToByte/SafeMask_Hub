@@ -6,10 +6,9 @@ const nextConfig: NextConfig = {
     unoptimized: true,
   },
   
-  // 告诉 Next.js 16，如果使用 Turbopack，也请允许某些 Webpack 逻辑
   experimental: {
-    // 如果你坚持要用 Turbopack，这里需要配置规则，
-    // 但目前最稳妥的是在命令行加 --webpack
+    // 显式声明 turbopack 配置（哪怕为空），可以缓解部分版本下的强行检查
+    turbopack: {}, 
   },
 
   /* 🚀 Webpack 配置 */
