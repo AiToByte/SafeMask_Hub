@@ -19,7 +19,7 @@ git commit -m 'deploy'
 
 # 4. 部署到 https://<USERNAME>.github.io/<REPO>
 # 注意修改为你自己的仓库地址
-git push -f git@github.com:你的用户名/safemask-hub.git master:gh-pages
+git push -f git@github.com:AiToByte/safemask-hub.git master:gh-pages
 
 cd -
 echo "部署完成！"
