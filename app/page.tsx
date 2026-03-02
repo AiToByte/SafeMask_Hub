@@ -137,7 +137,7 @@ export default function Home() {
           <div className="max-w-4xl relative z-20">
             <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-amber-500/10 border border-amber-500/20 mb-8">
               <Sparkles size={12} className="text-amber-500" />
-              <span className="text-[10px] font-black uppercase tracking-widest text-amber-200/80">Version 1.2.3 "Dual Universe" is Live</span>
+              <span className="text-[10px] font-black uppercase tracking-widest text-amber-200/80">Version 1.2.2 "Dual Universe" is Live</span>
             </div>
             
             <h1 className="text-6xl md:text-8xl font-black tracking-tighter mb-8 leading-[1.05] text-white">

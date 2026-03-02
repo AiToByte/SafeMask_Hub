@@ -10,7 +10,7 @@ interface LiveSandboxProps {
 }
 
 export default function LiveSandbox({ initialPattern, initialMask }: LiveSandboxProps) {
-  const [input, setInput] = useState("测试数据：我的手机号是 13888888888，邮箱 xiaosheng@outlook.com");
+  const [input, setInput] = useState("测试数据：我的手机号是 13888888888，邮箱 xiaosheng.tech@outlook.com");
   const [output, setOutput] = useState("");
   const { isReady, initEngine, maskText } = useWasmEngine();
 
